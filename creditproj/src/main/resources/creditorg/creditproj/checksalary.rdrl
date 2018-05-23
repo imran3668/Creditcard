@@ -1,0 +1,13 @@
+package creditorg.creditproj;
+
+import java.lang.Number;
+
+rule "checksalary"
+	dialect "mvel"
+	no-loop true
+	ruleflow-group "validsalary"
+	when
+		input : firstinput( salary >= 5000 )
+	then
+		input.setSalaryok( true );
+end

@@ -1,0 +1,59 @@
+
+<form id="1512235660">
+<property name="name" value="userenteringinputs-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="inputfirst_creditlimit" type="InputTextInteger" id="1535764412">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;creditlimit (inputfirst)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="datain/creditlimit"/>
+<property name="outputBinding" value="dataout/creditlimit"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="inputfirst_gender" type="InputText" id="1708996882">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;gender (inputfirst)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="datain/gender"/>
+<property name="outputBinding" value="dataout/gender"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="inputfirst_isdoctor" type="CheckBox" id="612340264">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;isdoctor (inputfirst)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="datain/isdoctor"/>
+<property name="outputBinding" value="dataout/isdoctor"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="0" name="inputfirst_name" type="InputText" id="754197816">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (inputfirst)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="datain/name"/>
+<property name="outputBinding" value="dataout/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="inputfirst_salary" type="InputTextInteger" id="1341830492">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;salary (inputfirst)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="datain/salary"/>
+<property name="outputBinding" value="dataout/salary"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="5" name="inputfirst_salaryok" type="CheckBox" id="130108127">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;salaryok (inputfirst)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="datain/salaryok"/>
+<property name="outputBinding" value="dataout/salaryok"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<dataHolder inputId="datain" name="#E9E371" type="dataModelerEntry" outId="dataout" value="creditorg.creditproj.firstinput" id="inputfirst"/>
+</form>
