@@ -211,7 +211,7 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: checkcredit.userenteringinputs
+		User Task Form: checkcredit.ManagerApproval
 	</div>
 	<div id="content">
 	    <input type="hidden" name="taskId" value="${task.id}"/>
@@ -219,7 +219,7 @@
             <legend>Task Info</legend>
             	<label for="name">Owners</label>
             	<div class="div_checkbox">
-											bankuser
+											manager
             	
             	</div>
             	<label for="name">Actor ID</label>

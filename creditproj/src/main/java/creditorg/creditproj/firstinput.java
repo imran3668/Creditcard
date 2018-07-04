@@ -26,8 +26,11 @@ public class firstinput implements java.io.Serializable
    @org.kie.api.definition.type.Label("salaryok")
    private java.lang.Boolean salaryok;
 
-   @org.kie.api.definition.type.Label(value = "cardtype")
+   @org.kie.api.definition.type.Label("cardtype")
    private java.lang.String cardtype;
+
+   @org.kie.api.definition.type.Label(value = "Manager Approval")
+   private java.lang.Boolean managerapproval;
 
    public firstinput()
    {
@@ -103,10 +106,20 @@ public class firstinput implements java.io.Serializable
       this.cardtype = cardtype;
    }
 
+   public java.lang.Boolean getManagerapproval()
+   {
+      return this.managerapproval;
+   }
+
+   public void setManagerapproval(java.lang.Boolean managerapproval)
+   {
+      this.managerapproval = managerapproval;
+   }
+
    public firstinput(java.lang.String name, java.lang.String gender,
          java.lang.Boolean isdoctor, java.lang.Integer salary,
          java.lang.Integer creditlimit, java.lang.Boolean salaryok,
-         java.lang.String cardtype)
+         java.lang.String cardtype, java.lang.Boolean managerapproval)
    {
       this.name = name;
       this.gender = gender;
@@ -115,6 +128,7 @@ public class firstinput implements java.io.Serializable
       this.creditlimit = creditlimit;
       this.salaryok = salaryok;
       this.cardtype = cardtype;
+      this.managerapproval = managerapproval;
    }
 
 }

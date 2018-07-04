@@ -48,8 +48,42 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
+					myInputs[i] = document.getElementById("to");
+					i++;
+					myInputs[i] = document.getElementById("from");
+					i++;
+					myInputs[i] = document.getElementById("subject");
+					i++;
+					myInputs[i] = document.getElementById("body");
+					i++;
+
 
 		var j=0;
+						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
+							alert("Please enter valid to");
+							myInputs[j].focus();
+							return false;
+						}
+					j++;
+						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
+							alert("Please enter valid from");
+							myInputs[j].focus();
+							return false;
+						}
+					j++;
+						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
+							alert("Please enter valid subject");
+							myInputs[j].focus();
+							return false;
+						}
+					j++;
+						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
+							alert("Please enter valid body");
+							myInputs[j].focus();
+							return false;
+						}
+					j++;
+
 		return true;
 	}
 </script>
@@ -206,6 +240,27 @@
 	    <input type="hidden" name="processId" value="${process.id}"/>
 		<fieldset>
             <legend>Process inputs</legend>
+                            		<label for="name">to</label>
+                            		<div class="div_texbox">
+                              		<input name="to" type="text" class="textbox" id="to" value="" />
+                            		</div>
+              	
+                            		<label for="name">from</label>
+                            		<div class="div_texbox">
+                              		<input name="from" type="text" class="textbox" id="from" value="" />
+                            		</div>
+              	
+                            		<label for="name">subject</label>
+                            		<div class="div_texbox">
+                              		<input name="subject" type="text" class="textbox" id="subject" value="" />
+                            		</div>
+              	
+                            		<label for="name">body</label>
+                            		<div class="div_texbox">
+                              		<input name="body" type="text" class="textbox" id="body" value="" />
+                            		</div>
+              	
+
           </fieldset>
 	</div>
 	<div id="footer">
